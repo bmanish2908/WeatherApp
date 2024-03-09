@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+.all-contents-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding:10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+  
+.city-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #43699B; /* Medium blue border */
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 300px;
+    background-color: white; /* Light blue background */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.city-input:focus {
+    border-color: #040A44; /* Dark blue border on focus */
+    background-color: white; /* White background on focus */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-button {
+    background-color: #040A44; /* Dark blue background */
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.search-button:hover {
+    background-color: #43699B; /* Medium blue background on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.city-name-information-block{
+    margin-top:20px;
+    font-family: "Nunito Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+
 }
+
+.display-container{
+    width:100%;
+}
+
+
+.weather-information-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.current-and-overview{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+    width:100%;
+    margin-bottom:30px;
+    margin-top:10px;
+}
+  

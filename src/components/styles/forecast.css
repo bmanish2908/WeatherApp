@@ -1,0 +1,45 @@
+.forecast-weather-container{
+    margin-top:20px;
+    margin-bottom:20px;
+    width:94.5%;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.forecast-weather-cards-container{
+    width:100%;
+}
+
+.forecast-card-container{
+    background-color: #040A44;
+    margin-bottom: 10px;
+
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding:6px 10px;
+    border-radius:7px;
+}
+
+.rain-icon{
+    width:20px;
+    height: 20px;
+    color:white;
+}
+
+.forecast-card-date{
+    color:#93b4de;
+    font-weight: 500;
+    width:200px;
+}
+
+
+.forecast-card-temps{
+    width:200px;
+    color:white;
+    font-weight: 700;
+}
